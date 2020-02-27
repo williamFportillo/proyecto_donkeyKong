@@ -27,7 +27,7 @@
     //set_color(WHITE, BLACK);
 
 
-void moverMono()
+/*void moverMono()
 {
             set_cursor(filaMono, columnaMono);
             puts("\x4\x4\x4\x4");
@@ -60,13 +60,14 @@ void moverMono()
             puts("\x25");//parte superior de Donkey Kong
             
       
-}
+}*/
 
+/*
 void moverBarril()
 {
 	   set_cursor(filaBarril, columnaBarril);
            puts("\x4");
-           if(columnaBarril > 2){
+           if(columnaBarril > 1){
               columnaBarril = columnaBarril - 1;
            }else{
 	      columnaBarril = columnaMono - 3;
@@ -92,8 +93,7 @@ void moverBarril()
           set_cursor(filaBarril,columnaBarril);
           puts("\x86");//barril
       
-}
-
+}*/
 
 int perderConPlanta()
 {
@@ -125,7 +125,7 @@ int perderConPlanta()
        return 3;
 }
 
-int perderConBarril()
+/*int perderConBarril()
 {
 	//PERDER CONTRA EL BARRIL
        if((columna == columnaBarril &&fila == filaBarril && contadorVidas > 1) || (columna+1 == columnaBarril && fila == filaBarril && contadorVidas > 1)){
@@ -149,7 +149,7 @@ int perderConBarril()
                // goto salir;
        }
        return 3;
-}
+}*/
 
 
 int perderConMono()
@@ -269,7 +269,7 @@ int main() {
     }else if(contadorVidas == 1){
         puts("\x3\x4");//se pintas las vidas
     }
-   
+   set_color(WHITE, BLACK);
    // set_color(f, b);
     keypad_init();
     delay_ms(100);
